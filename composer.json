@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "hanson/foundation-sdk": "^4.0"
+        "hanson/foundation-sdk": "4.0.1"
     },
     "autoload": {
         "psr-4": {
