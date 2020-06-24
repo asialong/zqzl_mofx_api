@@ -1,0 +1,15 @@
+{
+    "name": "zqzl/mofxsdk",
+    "description": "zqzl's mofxsdk package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "zqzl",
+            "email": "eqlianlian@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "hanson/foundation-sdk": "^4.0"
+    }
+}
