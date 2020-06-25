@@ -87,17 +87,4 @@ class Bucket extends Api
     {
         return $this->request(['className'=>'ForeignOrder', 'methodName'=>'orderInfo'], $params);
     }
-
-    /**
-     * 返回回调信息
-     *
-     * @param array $params
-     * @return mixed
-     * @throws MofxDispatchException
-     */
-    public function result(array $params)
-    {
-        $getParams = $_REQUEST;
-        return null;
-    }
 }

@@ -25,21 +25,18 @@ $dispatch = new \Zqzl\Mofxsdk\Dispatch([
 $params = [];
 
 // 获取token 
-$dispatch->getToken($params);
+$result = $dispatch->getToken($params);
 
 // 获取商品列表
-$dispatch->goodList($params);
+$result = $dispatch->goodList($params);
 
 // 获取商品详情
-$dispatch->goodInfo($params);
+$result = $dispatch->goodInfo($params);
 
 // 创建订单
-$dispatch->createOrder($params);
+$result = $dispatch->createOrder($params);
 
 // 订单支付
-$dispatch->pay($params);
-
-// 系统返回信息
-$dispatch->result($params);
+$result = $dispatch->pay($params);
 
 ```
