@@ -2,6 +2,7 @@
 namespace Zqzl\Mofxsdk;
 
 use Hanson\Foundation\AbstractAPI;
+use Hanson\Foundation\Foundation;
 
 class Api extends AbstractAPI
 {
@@ -9,8 +10,9 @@ class Api extends AbstractAPI
     const URL = 'https://mall.eqll.top/api/';
     private $token = '';
 
-    public function __construct(string $token)
+    public function __construct(string $token, Foundation $app)
     {
+        parent::__construct($app);
         if(!$token)  return false;
         $this->token = $token;
     }
