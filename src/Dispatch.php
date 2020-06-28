@@ -24,7 +24,7 @@ class Dispatch extends Foundation
     public function __construct($config)
     {
         parent::__construct($config);
-        $this->bucket = new Bucket($this);
+        $this->bucket = new Bucket();
     }
 
     public function __call($name, $arguments)
