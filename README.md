@@ -12,6 +12,7 @@ composer require zqzl/mofxsdk -vvv
 <?php
 
 $dispatch = new \Zqzl\Mofxsdk\Dispatch([
+    'token' => '123',
     'debug' => true,
     'log' => [
         'name' => 'mofx',
