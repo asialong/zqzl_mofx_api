@@ -9,6 +9,12 @@ class Api extends AbstractAPI
     const URL = 'https://mall.eqll.top/api/';
     private $token = '';
 
+    public function __construct(string $token)
+    {
+        if(!$token)  return false;
+        $this->token = $token;
+    }
+
     /**
      * @param array $method
      * @param array $params
@@ -20,12 +26,6 @@ class Api extends AbstractAPI
         $params = array_merge($params,[
             'api' => $method['methodName']
         ]);
-
-        if(!$params['token'])  return false;
-
-        $this->token = $params['token'];
-
-        unset($params['token']);
 
         $params['sign'] = $this->signature($params);
 
